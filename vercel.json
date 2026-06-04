@@ -1,0 +1,50 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/service-worker.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/producto/:id",
+      "destination": "/producto/index.html"
+    },
+    {
+      "source": "/admin/productos/editar/:id",
+      "destination": "/admin/productos/editar.html"
+    },
+    {
+      "source": "/admin/login",
+      "destination": "/admin/login.html"
+    },
+    {
+      "source": "/admin/dashboard",
+      "destination": "/admin/dashboard.html"
+    },
+    {
+      "source": "/admin/productos/nuevo",
+      "destination": "/admin/productos/nuevo.html"
+    },
+    {
+      "source": "/admin/productos",
+      "destination": "/admin/productos/index.html"
+    },
+    {
+      "source": "/productos",
+      "destination": "/productos/index.html"
+    },
+    {
+      "source": "/contacto",
+      "destination": "/contacto/index.html"
+    }
+  ]
+}
+

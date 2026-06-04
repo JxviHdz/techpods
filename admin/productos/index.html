@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Productos Admin | TechPods Mtr</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body class="admin-page">
+    <div class="admin-shell">
+      <aside id="admin-sidebar" class="admin-sidebar"></aside>
+      <main class="admin-main">
+        <div class="admin-top">
+          <div>
+            <span class="eyebrow">Inventario</span>
+            <h1>Gestion de productos</h1>
+          </div>
+          <a class="btn btn-primary" href="/admin/productos/nuevo">Nuevo producto</a>
+        </div>
+        <section class="panel">
+          <div class="field">
+            <label for="admin-search">Buscar</label>
+            <input class="input" id="admin-search" type="search" placeholder="Nombre, marca o modelo">
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Imagen</th>
+                  <th>Producto</th>
+                  <th>Categoria</th>
+                  <th>Precio</th>
+                  <th>Stock</th>
+                  <th>Estado</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="products-table"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/js/pages/adminProducts.js"></script>
+  </body>
+</html>
+

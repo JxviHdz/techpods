@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a84ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="TechPods">
+    <title>TechPods Mtr | Tecnologia premium</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main>
+      <section class="container hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Catalogo premium</span>
+          <h1>Tecnologia lista para estrenar.</h1>
+          <p>Celulares, auriculares, accesorios y dispositivos seleccionados con una experiencia rapida, limpia y enfocada en compra por WhatsApp.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/productos">Ver catalogo</a>
+            <a class="btn btn-secondary" href="/contacto">Contactar</a>
+          </div>
+        </div>
+        <div class="hero-device" aria-hidden="true"></div>
+      </section>
+
+      <section class="container section">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Destacados</span>
+            <h2>Productos recomendados</h2>
+          </div>
+          <a class="btn btn-secondary" href="/productos">Ver todos</a>
+        </div>
+        <div id="featured-products" class="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="container section">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Recien agregados</span>
+            <h2>Novedades del catalogo</h2>
+          </div>
+        </div>
+        <div id="recent-products" class="product-grid" aria-live="polite"></div>
+      </section>
+    </main>
+    <script type="module" src="/js/pages/home.js"></script>
+    <script src="/js/pwa.js" defer></script>
+  </body>
+</html>

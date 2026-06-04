@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a84ff">
+    <title>Catalogo | TechPods Mtr</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main class="container section">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Catalogo</span>
+          <h1>Productos disponibles</h1>
+          <p>Busca por nombre, marca, modelo o categoria.</p>
+        </div>
+      </div>
+      <div class="catalog-layout">
+        <aside class="filters" aria-label="Filtros de productos">
+          <div class="field">
+            <label for="search">Busqueda</label>
+            <input class="input" id="search" type="search" placeholder="iPhone, AirPods, cargador...">
+          </div>
+          <div class="field">
+            <label for="category">Categoria</label>
+            <select class="select" id="category"></select>
+          </div>
+          <button class="btn btn-secondary" id="clear-filters" type="button">Limpiar filtros</button>
+        </aside>
+        <section>
+          <div class="toolbar" style="justify-content:space-between;margin-bottom:14px">
+            <p class="muted" id="result-count">Cargando productos...</p>
+          </div>
+          <div id="products-grid" class="product-grid" aria-live="polite"></div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="/js/pages/catalog.js"></script>
+    <script src="/js/pwa.js" defer></script>
+  </body>
+</html>
+

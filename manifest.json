@@ -1,0 +1,26 @@
+{
+  "name": "TechPods Mtr",
+  "short_name": "TechPods",
+  "description": "Catalogo premium de tecnologia, celulares, accesorios y dispositivos.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f5f7fb",
+  "theme_color": "#0a84ff",
+  "categories": ["shopping", "technology"],
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
