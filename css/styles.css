@@ -87,6 +87,14 @@ img {
   letter-spacing: 0;
 }
 
+.brand-logo {
+  width: 176px;
+  max-height: 54px;
+  border-radius: var(--radius);
+  object-fit: contain;
+  object-position: left center;
+}
+
 .brand-mark {
   display: grid;
   width: 38px;
@@ -119,17 +127,18 @@ img {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+  grid-template-columns: minmax(0, 0.82fr) minmax(340px, 1fr);
   align-items: center;
-  gap: 42px;
-  padding: 54px 0 32px;
+  gap: 34px;
+  min-height: 540px;
+  padding: 34px 0 24px;
 }
 
 .hero-copy h1 {
   max-width: 720px;
   margin: 0;
-  font-size: clamp(2.35rem, 6vw, 5.3rem);
-  line-height: 0.98;
+  font-size: clamp(3rem, 8vw, 6.8rem);
+  line-height: 0.92;
   letter-spacing: 0;
 }
 
@@ -138,6 +147,63 @@ img {
   color: var(--muted);
   font-size: 1.08rem;
   line-height: 1.7;
+}
+
+.hero-showcase {
+  position: relative;
+  display: grid;
+  min-height: 420px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(217, 226, 236, 0.78);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.82) 42%, rgba(238, 243, 248, 0.22) 100%),
+    url("/assets/images/product-placeholder.svg") right center / min(48%, 360px) no-repeat,
+    linear-gradient(145deg, #ffffff, #eef6ff);
+  box-shadow: var(--shadow);
+}
+
+.hero-showcase::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, transparent 0 58%, rgba(10, 132, 255, 0.08) 58% 100%);
+  pointer-events: none;
+}
+
+.hero-showcase img {
+  position: relative;
+  width: min(72%, 430px);
+  border-radius: var(--radius);
+  box-shadow: 0 20px 55px rgba(16, 24, 40, 0.08);
+}
+
+.hero-offer {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  width: min(62%, 320px);
+  border: 1px solid rgba(217, 226, 236, 0.9);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 14px;
+  backdrop-filter: blur(14px);
+}
+
+.hero-offer span {
+  display: block;
+  color: var(--danger);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.hero-offer strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 1.08rem;
 }
 
 .hero-actions,
@@ -639,6 +705,10 @@ img {
     min-height: 320px;
   }
 
+  .hero-showcase {
+    min-height: 360px;
+  }
+
   .product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -670,6 +740,10 @@ img {
     padding: 12px 0;
   }
 
+  .brand-logo {
+    width: 148px;
+  }
+
   .nav-links {
     width: 100%;
     overflow-x: auto;
@@ -678,6 +752,17 @@ img {
 
   .hero {
     padding-top: 28px;
+    min-height: auto;
+  }
+
+  .hero-showcase {
+    min-height: 300px;
+  }
+
+  .hero-offer {
+    width: calc(100% - 28px);
+    left: 14px;
+    bottom: 14px;
   }
 
   .product-grid,
@@ -701,4 +786,3 @@ img {
     padding: 18px 12px;
   }
 }
-
