@@ -12,10 +12,11 @@ export function productCard(product) {
   const name = escapeHtml(product.nombre);
   const brand = escapeHtml(product.marca);
   const model = escapeHtml(product.modelo);
+  const detailUrl = `/producto?id=${encodeURIComponent(product.id)}`;
 
   return `
     <article class="product-card">
-      <a class="product-media" href="/producto/${product.id}" aria-label="Ver ${name}">
+      <a class="product-media" href="${detailUrl}" aria-label="Ver ${name}">
         <img src="${image}" alt="${name}" loading="lazy">
       </a>
       <div class="product-body">
@@ -26,7 +27,7 @@ export function productCard(product) {
           <span class="price">${formatMoney(product.precio)}</span>
           ${oldPrice}
         </div>
-        <a class="btn btn-secondary" href="/producto/${product.id}">Ver detalle</a>
+        <a class="btn btn-secondary" href="${detailUrl}">Ver detalle</a>
       </div>
     </article>
   `;
