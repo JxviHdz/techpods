@@ -8,8 +8,7 @@ export function mountHeader(target = "#site-header") {
     <header class="site-header">
       <div class="container nav">
         <a class="brand" href="/" aria-label="TechPods Mtr inicio">
-          <span class="brand-mark">T</span>
-          <span>TechPods Mtr</span>
+          <img class="brand-logo" src="/assets/images/techpods-logo-cropped.jpeg" alt="TechPods MTR">
         </a>
         <nav class="nav-links" aria-label="Navegacion principal">
           <a data-nav href="/">Inicio</a>
@@ -23,4 +22,3 @@ export function mountHeader(target = "#site-header") {
 
   setActiveNav();
 }
-
