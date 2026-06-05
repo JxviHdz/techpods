@@ -7,8 +7,7 @@ export function mountAdminSidebar(profile) {
 
   sidebar.innerHTML = `
     <a class="brand" href="/admin/dashboard">
-      <span class="brand-mark">T</span>
-      <span>TechPods Mtr</span>
+      <img class="brand-logo" src="/assets/images/techpods-logo-cropped.jpeg" alt="TechPods MTR">
     </a>
     <p class="muted">${profile.email}</p>
     <nav class="admin-nav">
@@ -29,4 +28,3 @@ export function mountAdminSidebar(profile) {
     }
   });
 }
-
