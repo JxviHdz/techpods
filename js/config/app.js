@@ -1,6 +1,6 @@
 export const APP_CONFIG = {
-  storeName: "TechPods Mtr",
-  whatsappNumber: "573001234567",
+  storeName: "TechPods MTR",
+  whatsappNumber: "573216948882",
   currency: "COP",
   locale: "es-CO",
   categories: [
@@ -18,4 +18,3 @@ export const APP_CONFIG = {
 export function whatsappUrl(message) {
   return `https://wa.me/${APP_CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
-
