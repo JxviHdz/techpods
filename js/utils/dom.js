@@ -44,7 +44,9 @@ export function skeletonCards(count = 8) {
 }
 
 export function getRouteId() {
+  const queryId = new URLSearchParams(window.location.search).get("id");
+  if (queryId) return queryId;
+
   const parts = window.location.pathname.split("/").filter(Boolean);
   return parts.at(-1);
 }
-
