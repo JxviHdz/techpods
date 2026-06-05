@@ -18,7 +18,8 @@ const STATIC_ASSETS = [
   "/assets/icons/icon-192.svg",
   "/assets/icons/icon-512.svg",
   "/assets/icons/icon-192.png",
-  "/assets/icons/icon-512.png"
+  "/assets/icons/icon-512.png",
+  "/assets/images/techpods-logo-cropped.jpeg"
 ];
 
 self.addEventListener("install", (event) => {
